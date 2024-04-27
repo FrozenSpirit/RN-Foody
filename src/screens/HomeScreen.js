@@ -4,6 +4,7 @@ import {TouchableOpacity} from 'react-native-gesture-handler';
 import {useSelector} from 'react-redux';
 import {store} from '../redux/store/store';
 import {decrement, increment} from '../redux/actions/counterAction';
+import AntDesignIcon from 'react-native-vector-icons/AntDesign';
 
 export default function HomeScreen(props) {
   const Count = useSelector(store => store.counter.count);
@@ -26,6 +27,8 @@ export default function HomeScreen(props) {
       <TouchableOpacity onPress={() => decrease()}>
         <Text>increment</Text>
       </TouchableOpacity>
+
+      <AntDesignIcon name="codesquare" size={30} color="red" />
     </View>
   );
 }

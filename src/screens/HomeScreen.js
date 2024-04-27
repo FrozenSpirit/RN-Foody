@@ -28,7 +28,7 @@ export default function HomeScreen(props) {
         <Text>increment</Text>
       </TouchableOpacity>
 
-      <AntDesignIcon name="codesquare" size={30} color="red" />
+      <AntDesignIcon name="codesquare" size={30} color="orange" />
     </View>
   );
 }

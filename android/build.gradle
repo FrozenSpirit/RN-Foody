@@ -1,4 +1,3 @@
-apply from: file("../../node_modules/react-native-vector-icons/fonts.gradle")
 buildscript {
     ext {
         buildToolsVersion = "34.0.0"
@@ -18,5 +17,4 @@ buildscript {
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin")
     }
 }
-
 apply plugin: "com.facebook.react.rootproject"

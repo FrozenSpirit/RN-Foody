@@ -1,19 +1,17 @@
 import 'react-native-gesture-handler';
-import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
+import {SafeAreaView, StyleSheet} from 'react-native';
 import React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
-import StackNavigator from './src/router/stack_nav/StackNavigator';
-import HomeScreen from './src/screens/HomeScreen';
-import BottomNavigator from './src/router/bottom_nav/BottomNavigator';
+import DrawerNavigator from './src/router/drawer_nav/DrawerNavigator';
+import {Provider} from 'react-redux';
+import {store} from './src/redux/store/store';
 
 export default function App() {
   return (
-    <NavigationContainer>
+    <Provider store={store}>
       <SafeAreaView style={styles.container}>
-        {/* <StackNavigator /> */}
-        <BottomNavigator />
+        <DrawerNavigator />
       </SafeAreaView>
-    </NavigationContainer>
+    </Provider>
   );
 }
 
